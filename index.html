@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>白鳥庭園 QRガイド</title>
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+      -webkit-text-size-adjust:100%;
+      font-family: "Hiragino Kaku Gothic ProN","メイリオ","Yu Gothic","Noto Sans JP", sans-serif;
+      background:#000;
+      color:#111;
+    }
+
+    .hero{
+      position:relative;
+      width:100vw;
+      height:100vh; 
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .hero img{
+      width:100%;
+      height:100%;
+      object-fit:cover; 
+      object-position:center top; 
+      display:block;
+      -webkit-user-select:none;
+      user-select:none;
+      -webkit-touch-callout:none;
+    }
+
+    .controls{
+      position:absolute;
+      left:6%;
+      top:56%; 
+      transform:translateY(-50%);
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      pointer-events:auto;
+    }
+
+    .btn{
+      background: rgba(255,250,230,0.95);
+      border:3px solid #000;
+      padding:10px 18px;
+      min-width:120px;
+      text-align:center;
+      font-weight:700;
+      font-size:16px;
+      color:#111;
+      border-radius:4px;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.35);
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .hp-btn{
+      position:absolute;
+      right:6%;
+      bottom:6%;
+      width:88px;
+      height:88px;
+      border-radius:50%;
+      background: linear-gradient(#f6f6f6,#dcdcdc);
+      border:3px solid rgba(0,0,0,0.6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      font-size:14px;
+      text-align:center;
+      padding:8px;
+      line-height:1;
+      pointer-events:auto;
+    }
+
+    @media (max-width:420px){
+      .btn{ font-size:18px; padding:12px 22px; min-width:140px; }
+      .controls{ left:5%; top:60%; gap:12px; }
+      .hp-btn{ width:96px; height:96px; font-size:15px; right:5%; bottom:5%; }
+    }
+
+    @media (min-width:900px){
+      .controls{ left:40px; top:60%; }
+      .hp-btn{ right:40px; bottom:40px; }
+    }
+
+    .btn:focus, .hp-btn:focus {
+      outline:3px solid rgba(255,200,0,0.9);
+      outline-offset:3px;
+    }
+  </style>
+</head>
+<body>
+  <main class="hero" role="main" aria-label="白鳥庭園 QRガイド メイン画像">
+    <img src="白鳥ガイド.jpg" alt="白鳥庭園の風景（QRガイド用背景画像）" draggable="false" />
+
+    <div class="controls" role="navigation" aria-label="園内リンク">
+      <a class="btn" href="#map">園内マップ</a>
+      <a class="btn" href="#camera">カメラ</a>
+      <a class="btn" href="#guide">ガイドの使い方</a>
+    </div>
+
+    <a class="hp-btn" href="https://shirotori-garden.example/" aria-label="白鳥庭園公式ホームページに移動">
+      白鳥庭園<br>HP
+    </a>
+  </main>
+
+  <section id="map" style="padding:24px;">
+    <h2>園内マップ（サンプル）</h2>
+    <p>aaaaaaaaaaa</p>
+  </section>
+  <section id="camera" style="padding:24px;">
+    <h2>カメラ（サンプル）</h2>
+    <p>aaaaaaaaaaa</p>
+  </section>
+  <section id="guide" style="padding:24px; margin-bottom:60px;">
+    <h2>ガイドの使い方（サンプル）</h2>
+    <p>aaaaaaaaaaaaaa</p>
+  </section>
+</body>
+</html>
